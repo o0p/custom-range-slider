@@ -8,5 +8,8 @@ range.addEventListener('input', (e) => {
     const num_label_width = +label_width.substring(0, range_width.length - 2);
     const min = +e.target.min;
     const max = +e.target.max;
+    const left = value * (num_width / max) - num_label_width / 2;
+
+
     label.innerHTML = value;
 });
